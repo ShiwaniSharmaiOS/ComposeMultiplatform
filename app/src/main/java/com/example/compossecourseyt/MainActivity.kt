@@ -15,6 +15,8 @@ import androidx.compose.ui.graphics.Color
 import com.example.compossecourseyt.ui.theme.ComposseCourseYTTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.ui.unit.*
+import androidx.compose.foundation.border
+
 
 
 class MainActivity : ComponentActivity() {
@@ -31,7 +33,8 @@ Column {
        //     .requiredWidth(600.dp)
             .fillMaxWidth()
             .height(250.dp)
-            .background(Color.Yellow),
+            .background(Color.Yellow)
+            .border(5.dp,Color.Red),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly
     ) {
@@ -42,7 +45,11 @@ Column {
     Row(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Red),
+            .background(Color.Red)
+            .border(5.dp,Color.Yellow)
+            .padding(10.dp)
+            .border(5.dp,Color.Yellow)
+           ,
         horizontalArrangement = Arrangement.SpaceAround,
         verticalAlignment = Alignment.CenterVertically
     ) {
